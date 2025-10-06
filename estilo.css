@@ -14,10 +14,10 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
     font-size: larger;
-    align-items: center;
     padding: 40px 60px;
     background: linear-gradient(to right, #dad7d7 30%, #ff9901 70%);
 

@@ -1,0 +1,196 @@
+/* ---------- ESTILO BASE (MOBILE FIRST) ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    /*background: linear-gradient(to bottom, #dad7d7 30%, #ff9901 70%);*/
+    background-color: #dad7d7;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #dad7d7;
+    /*background: linear-gradient(to right, #dad7d7 30%, #ff9901 70%);*/
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 650;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    transform: translateY(-5px);
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+.buscar input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 25px;
+    font-size: 14px;
+    width: 150px;
+}
+
+.carrinho img {
+    width: 35px;
+    cursor: pointer;
+}
+
+/* PRODUTOS */
+.produtos {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.logo-produtos img {
+    width: 40%;
+    margin: 20px 0 40px;
+}
+
+.grid-roupas,
+.grid-tenis,
+.grid-acessórios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.cartao {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.cartao img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer-info,
+.footer-social,
+.footer-direitos {
+    text-align: center;
+    margin: 20px;
+}
+
+.logo-social {
+    width: 30px;
+    height: 30px;
+}
+
+/* ---------- TABLET ---------- */
+@media (min-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 25px 40px;
+    }
+
+    .menu {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .buscar input {
+        width: 200px;
+    }
+
+    .logo-produtos img {
+        width: 25%;
+    }
+
+    .grid-roupas,
+    .grid-tenis,
+    .grid-acessórios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-info,
+    .footer-social {
+        text-align: left;
+        margin: 30px 60px;
+    }
+
+    .footer-direitos {
+        text-align: center;
+    }
+}
+
+/* ---------- DESKTOP ---------- */
+@media (min-width: 992px) {
+    .navbar {
+        padding: 40px 80px;
+    }
+
+    .menu a {
+        font-size: 22px;
+    }
+
+    .buscar input {
+        width: 250px;
+    }
+
+    .logo-produtos img {
+        width: 12%;
+    }
+
+    .grid-roupas,
+    .grid-tenis,
+    .grid-acessórios {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-info,
+    .footer-social {
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+        margin: 40px;
+    }
+
+    .footer-social {
+        text-align: right;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        background: rgb(0, 0, 0) !important;
+    }
+}
