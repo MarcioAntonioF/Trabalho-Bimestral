@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #dad7d7 30%, #ff9901 70%);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: larger;
+    background: linear-gradient(to right, #dad7d7 30%, #ff9901 70%);
+}
+
+nav a:focus {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    outline: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 650;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    transform: translateY(-5px);
+}
+
+.carrinho img {
+    align-items: right;
+    width: 35px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carrinho img:hover {
+    transform: scale(1.1);
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.produtos {
+    padding: 40px 40px;
+    text-align: center;
+}
+
+.logo-produtos img {
+    width: 45%;
+    margin: 30px 0;
+}
+
+.produtos h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.8em;
+    color: #000000;
+}
+
+.produtos h3 {
+    margin-bottom: 20px;
+}
+
+.grid-tenis,
+.grid-roupas,
+.grid-acessórios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.cartao {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.cartao:hover {
+    transform: scale(1.05);
+}
+
+.cartao img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.cartao button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    margin-top: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cartao button:hover {
+    background-color: #ff9901;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 120px;
+}
+
+.buscar input {
+    border: none;
+    outline: none;
+    padding: 7px;
+    font-size: 14px;
+    width: 150px;
+}
+
+.buscar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.logo-social {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-info,
+.footer-social {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.footer-direitos {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 20px 0;
+}

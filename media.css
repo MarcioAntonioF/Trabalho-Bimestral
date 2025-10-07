@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 40px;
+    }
+
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .grid-tenis,
+    .grid-roupas,
+    .grid-acessórios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo-produtos img {
+        width: 25%;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        padding: 40px 60px;
+    }
+
+    .menu {
+        gap: 50px;
+    }
+
+    .grid-tenis,
+    .grid-roupas,
+    .grid-acessórios {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .logo-produtos img {
+        width: 15%;
+    }
+}
